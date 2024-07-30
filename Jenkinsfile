@@ -2,26 +2,26 @@ pipeline{
     agent any
 
     stages{
-        stage("") {
+        stage("Checkout code") {
             //checkout repository
             steps {
                 git branch: 'master', url: 'https://github.com/Andarz/Workshop-CI-System-with-Selenium-Appium-Tests-II'
             }
 
         }
-        stage("") {
+        stage("Setup .Net Core") {
             //install dotnet
             
         }
-        stage("") {
+        stage("Restore dependencies") {
             //install dependencies
             
         }
-        stage("") {
+        stage("Build") {
             //build
             
         }
-        stage("") {
+        stage("Run Tests") {
             //run tests
             
         }
